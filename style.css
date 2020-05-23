@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: 150px;
+    grid-gap: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+#timer {
+    grid-column: span 3;
+}
+
+#score {
+    grid-column: span 3;
+}
+
+.tile {
+    background-color: #eee;
+}
+
+.mole {
+    background-image: url(/img/mole.png);
+    background-size: cover;
+}
